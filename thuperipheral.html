@@ -5,7 +5,103 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>NCPU2018</title>
-    
+    <style type="text/css">
+		.head{
+			border-top:5px rgb(67, 207, 200) solid;
+            border-bottom:5px rgb(67, 207, 200) solid;
+            padding:1.25%;
+            padding-left: 0%;
+            margin-top: 30px;
+            margin-bottom:30px;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-weight: bold;
+            font-size: 300%;
+            text-align: left;
+            box-sizing: border-box;}
+		.in_body{
+			background-color: #EDEDED;
+			width: 90%;
+			margin-left: auto;
+			margin-right: auto;
+			height: 80%}
+		.out_body{
+			background-color: #EDEDED;
+			height: 80%}
+		.box1{
+			line-height: 30px;
+			list-style-position:outside;
+			background-color: #EDEDED;
+			display: inline-block;
+			vertical-align:text-top;
+			width: 25%}
+		.box2{
+			line-height: 30px;
+			list-style-position:outside;
+			background-color: #EDEDED;
+			display: inline-block;
+			vertical-align:text-top;
+			width: 18%}
+		.box4{
+			line-height: 30px;
+			list-style-position:outside;
+			background-color: #EDEDED;
+			display: inline-block;
+			vertical-align:text-top;
+			width: 30%}
+		.box3{
+			line-height: 30px;
+			list-style-position:outside;
+			background-color: #EDEDED;
+			display: inline-block;
+			vertical-align:text-top;
+			width: 22%}
+		.list{
+				margin-top: 40px;
+				margin-bottom: 40px;
+				list-style-position:outside;
+				box-sizing: border-box;
+				margin-left: 3%;
+				margin-right: 5%;
+			}  
+		.contenter{
+			background-color: #EDEDED;
+			width:88.45%;
+			border-color: rgb(201, 201, 201) ;
+			border-style:solid;
+			border-width:0px 2px 2px 2px;
+			margin-left: 8px;
+			margin-top: -10px;
+			font-size:24px;
+			font-weight:bolder}
+			@media screen and (max-width: 1187px){
+				.box1{width: 45%}
+				.box2{width: 40%}
+				.box4{width: 40%}				
+			}
+			@media screen and (max-width: 985px){
+				.box3{width: 80%}
+				.box4{width: 50%}			
+			}
+			@media screen and (max-width: 985px){
+				.box3{width: 80%}
+				.box4{width: 50%}			
+			}
+			@media screen and (max-width: 684px){
+				.box1{width: 80%}
+				.box2{width: 70%}
+				.box4{width: 80%}			
+			}
+			@media screen and (max-width: 450px){
+				.Head{font-size: 250%;}
+			}
+			@media screen and (max-width: 400px) {
+				.list{
+					margin-left: 2%;
+					list-style-position:outside;
+				}
+			}
+	</style>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
     
     
@@ -55,43 +151,31 @@
         </div>
     </div>
 
-    <div id="main">
-        <div class="header">
-            <h1>Page Title</h1>
-            <h2>A subtitle for your page goes here</h2>
-        </div>
-
-        <div class="content">
-            <h2 class="content-subhead">How to use this layout</h2>
-            <p>
-                To use this layout, you can just copy paste the HTML, along with the CSS in <a href="/css/layouts/side-menu.css" alt="Side Menu CSS">side-menu.css</a>, and the JavaScript in <a href="/js/ui.js">ui.js</a>. The JS file uses vanilla JavaScript to simply toggle an <code>active</code> class that makes the menu responsive.
-            </p>
-
-            <h2 class="content-subhead">Now Let's Speak Some Latin</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-
-            <div class="pure-g">
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2875/9069037713_1752f5daeb.jpg" alt="Peyto Lake">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm3.staticflickr.com/2813/9069585985_80da8db54f.jpg" alt="Train">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm6.staticflickr.com/5456/9121446012_c1640e42d0.jpg" alt="T-Shirt Store">
-                </div>
-                <div class="pure-u-1-4">
-                    <img class="pure-img-responsive" src="http://farm8.staticflickr.com/7357/9086701425_fda3024927.jpg" alt="Mountain">
-                </div>
-            </div>
-
-            <h2 class="content-subhead">Try Resizing your Browser</h2>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-        </div>
+    <div class="head">東海周邊</div>
+<div class="out_body">
+	<div class="in_body">
+	<div class="box1">
+		<A HREF=http://www.ipeen.com.tw/comment/838206>
+			<img  style="border-color: #EDEDED ;border-style:solid;border-width:8px 8px 0px 8px" src="cgmba1f0cae051c27f73a3b3399f4aa07f1646.jpg"  HEIGHT=auto WIDTH=90%></img>
+			<div class="contenter">
+				【台東海】東海商圈(夜市、東別)美食餐廳懶人包，美式日式韓式/下午茶、早午餐、夜市小吃等一次介紹給你(持續更新)
+			</div>
+		</A>
+	</div>
+	<div class="box2">
+		<img  style="border-color: #EDEDED ;border-style:solid;border-width:8px 8px 8px 8px" src="5QSM3FUZM9iBVlRlTv7rzg.jpg" HEIGHT=auto WIDTH=90%></img>
+	</div>
+	<div class="box3">
+		善用Google地圖就能找到這些地方呦！！
+	</div>
+	<div class="box4">	
+		<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d3082.8111253626435!2d120.59727728148093!3d24.181358982067056!3m2!1i1024!2i768!4f13.1!5e0!3m2!1szh-TW!2stw!4v1516949437985" width=100% height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+	</div>
+	</div>
+	<hr size=0.5 color=#0000FF></hr>
+</div>
+	<div class="list">地址：40704台中市西屯區臺灣大道四段1727號 東海大學 資訊工程系&nbsp;&nbsp;&nbsp;&nbsp;
+            電話：
     </div>
 </div>
 
