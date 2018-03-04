@@ -51,24 +51,31 @@ li{
       text-align: left;
       box-sizing: border-box;
 }
-
-
 #map{
-	margin-top: 40px;
+    margin-top: 40px;
     margin-bottom: 40px;
     list-style-position:inside;
     margin-left: 5%;
     margin-right: 5%;
     box-sizing: border-box;
 }
-
-
 #info{
-	margin-top: 40px;
-    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-bottom: 370px;
     list-style-position:inside;
     margin-left: 57%;
     box-sizing: border-box;
+}
+
+#image{
+   width: 45%;
+   float: right;
+   margin-left: 10px;
+   margin-bottom: 40px;
+}
+
+iframe{
+   float:left;
 }
 
 #carouselExampleControls{
@@ -76,25 +83,36 @@ li{
     top:0px;
     left:0px;
     z-index:-1;
-    margin-left:150px; 
+    margin-left:150px;
 }
 @media (max-width: 48em) {
     #carouselExampleControls{
-    margin-left:0px; 
+    margin-left:0px;
+    }
+    #image{
+        width:100%;
+    }
+    #info{
+        margin-left:5%;
+        margin-bottom:40px;
+    }
+    iframe{
+        float:none;
+        border: 0;
+        width: 100%;
     }
 }
 @media (max-width: 48em) {
     .md-hide {
-     display: none; 
+     display: none;
     }
 }
-
-
 .carousel-item > img {
     height: 450px;
     object-fit:cover;
 }
-	    </style>
+            </style>
+
 </head>
 <body>
 
@@ -182,18 +200,32 @@ li{
         <div id="Head">交通資訊</div>
 
 <div id="map">
-<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.718967652647!2d120.60093331536628!3d24.181586884378547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e1c3a406707%3A0xd43d01bc4fb2806a!2z5p2x5rW35aSn5a24!5e0!3m2!1szh-TW!2stw!4v1517391782183" width="55%" height="450" frameborder="0" style="float:left" allowfullscreen></iframe>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3639.718967652647!2d120.60093331536628!3d24.181586884378547!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693e1c3a406707%3A0xd43d01bc4fb2806a!2z5p2x5rW35aSn5a24!5e0!3m2!1szh-TW!2stw!4v1517391782183" width="55%" height="450" frameborder="0" allowfullscreen></iframe>
+
+
+</div>
 
 <div id="info">
 台中市西屯區台灣大道四段1727號<p>
 東海大學 科技大樓(ST) B1 電子計算中心電腦教室<p>
 公車:300路 ~ 308路<br>
-於「台中榮總/東海大學」站下車，（經地下道）可至東海大學校門。
+於「台中榮總/東海大學」站下車，（經地下道）可至東海大學校門。<p>
+高鐵接駁車:161號<br>
+於台中榮總(東海大學)站下車。
 </div>
+
+
+<div id="image">
+<a href="http://www.thu.edu.tw/upload_files/thu-map-P2_20180116.jpg" rel="_blank" target="_blank"> <img src="./img/thu-map.jpg"></a>
 </div>
-        
-    </div>
+
+<div id="info" style ="margin-left: 5%">
+校內地圖<p>
+進入校門沿約農路直走，於德耀路右轉經7-11即可到達科技大樓(ST)
 </div>
+
+</div>
+
 
 
 
