@@ -209,7 +209,7 @@
         <li>No - Run-time Error <ul><li>無法正常執行完畢</li></ul></li>
         <li>No - Time-limit Exceeded<ul><li>在時間限制內無法執行完畢</li></ul></li>
         <li>No - Wrong Answer<ul><li>答案是錯的，格式不符合要求也算錯。</li></ul></li>
-        <li>No - Broken Pipe<ul><li>如果程式無法在執行結束之前，成功讀入所有測試資料，有可能因為PC<sup>2</sup>  9.2.4 設計上的瑕疵，將會產生 Broken Pipe 的例外訊息，
+        <li>No - Broken Pipe<ul><li>如果程式無法在執行結束之前，成功讀入所有測試資料，有可能因為PC<sup>2</sup>設計上的瑕疵，將會產生 Broken Pipe 的例外訊息，
          無法判別是 Time-limit Exceeded 或是 Run-time Error。</li>
         <li>If your program cannot complete reading all input before it is terminated, then you should get this response. This is a bug of PC<sup>2</sup> 9.2.4. 
         We cannot distinguish which kind of errors of your program in a short time, but it should be a Run-time Error or a Time-limit Exceeded in general.</li></ul>
