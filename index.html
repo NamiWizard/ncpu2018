@@ -1,1071 +1,1099 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <meta name="description"
+        content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>NCPU2018</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-        <!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
         <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-        <!--<![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
     <style type="text/css">
+        img {
+            width: 100%;
+        }
 
-    img{
-        width: 100%;
-    }
-li{
-    margin-bottom: 20px;
-}
-
-   
-#Head{
-      border-top:5px rgb(67, 207, 200) solid;
-      border-bottom:5px rgb(67, 207, 200) solid;
-      padding:1.25%;
-      padding-left: 0%;
-      margin-top:30px;
-      margin-bottom:30px;
-      margin-left: 5%;
-      margin-right: 5%;
-      font-weight: bold;
-      font-size: 280%;
-      text-align: left;
-      box-sizing: border-box;
-}
+        li {
+            margin-bottom: 20px;
+        }
 
 
-#mes{
-	margin-top: 40px;
-    margin-bottom: 40px;
-    list-style-position:inside;
-    margin-left: 3%;
-    margin-right: 5%;
-    box-sizing: border-box;
-}
-
-#carouselExampleControls{
-    position:absolute;
-    top:0px;
-    left:0px;
-    z-index:-1;
-    margin-left:150px; 
-}
-@media (max-width: 48em) {
-    #carouselExampleControls{
-    margin-left:0px; 
-    }
-}
-
-@media (max-width: 48em) {
-    .md-hide {
-     display: none; 
-    }
-}
+        #Head {
+            border-top: 5px rgb(67, 207, 200) solid;
+            border-bottom: 5px rgb(67, 207, 200) solid;
+            padding: 1.25%;
+            padding-left: 0%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-weight: bold;
+            font-size: 280%;
+            text-align: left;
+            box-sizing: border-box;
+        }
 
 
-.carousel-item > img {
-    height: 450px;
-    object-fit:cover;
-}
+        #mes {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            list-style-position: inside;
+            margin-left: 3%;
+            margin-right: 5%;
+            box-sizing: border-box;
+        }
+
+        #carouselExampleControls {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            margin-left: 150px;
+        }
+
+        @media (max-width: 48em) {
+            #carouselExampleControls {
+                margin-left: 0px;
+            }
+        }
+
+        @media (max-width: 48em) {
+            .md-hide {
+                display: none;
+            }
+        }
+
+
+        .carousel-item>img {
+            height: 450px;
+            object-fit: cover;
+        }
     </style>
 </head>
+
 <body>
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block"  src="./img/school1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school3.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
-          </div>
+            <div class="carousel-item active">
+                <img class="d-block" src="./img/school1.jpg" alt="First slide">
+            </div>
             <div class="carousel-item">
-            <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
-          </div>
-      
+                <img class="d-block " src="./img/school2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
+            </div>
+
         </div>
 
-      </div>
+    </div>
 
 
 
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        
-        <span></span>
-    </a>
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <svg fill="#CCCCCC" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40">
 
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">NCPU2018</a>
+                <path fill-rule="evenodd"
+                    d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+                </path>
+            </svg>
+        </a>
 
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="./index.html" class="pure-menu-link">最新消息</a></li>
-                <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
-                <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
-                <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
-                <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
-                <li class="pure-menu-item"><a href="./PlayerNotes.html" class="pure-menu-link">選手須知</a></li>
-                <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
-                <li class="pure-menu-item"><a href="./commonProblem.html" class="pure-menu-link">常見問題</a></li>
-                <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
-                <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
-                <br>
-                <li style="line-height: 10px;">主辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link" > 東海大學<br>資訊工程學系</a></li>
-                <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/" class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
-                <br>
-                <li style="line-height: 10px;">協辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link" > ACM ICPC <br>Contest Council<br> for Taiwan</a></li>
-                <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php" class="pure-menu-link">東海大學<br>工學院</a></li>
-                <li class="pure-menu-item"><a href="http://www.csroc.org.tw/" class="pure-menu-link" >中華民國<br>電腦學會</a></li>
-                <li class="pure-menu-item"><a href="http://aictsp.thu.edu.tw" class="pure-menu-link" >台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
-            </ul>
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">NCPU2018</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="./index.html"
+                            class="pure-menu-link">最新消息</a></li>
+                    <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
+                    <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
+                    <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
+                    <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
+                    <li class="pure-menu-item"><a href="./PlayerNotes.html" class="pure-menu-link">選手須知</a></li>
+                    <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
+                    <li class="pure-menu-item"><a href="./commonProblem.html" class="pure-menu-link">常見問題</a></li>
+                    <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
+                    <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
+                    <br>
+                    <li style="line-height: 10px;">主辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link">
+                            東海大學<br>資訊工程學系</a></li>
+                    <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/"
+                            class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
+                    <br>
+                    <li style="line-height: 10px;">協辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link"> ACM ICPC
+                            <br>Contest Council<br> for Taiwan</a></li>
+                    <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php"
+                            class="pure-menu-link">東海大學<br>工學院</a></li>
+                    <li class="pure-menu-item"><a href="http://www.csroc.org.tw/"
+                            class="pure-menu-link">中華民國<br>電腦學會</a></li>
+                    <li class="pure-menu-item"><a href="http://aictsp.thu.edu.tw"
+                            class="pure-menu-link">台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
 
-<div class="pure-g" style="height: 450px;line-height: 450px">
-    <div class="pure-u-3-24 pure-u-md-2-24">
-        &nbsp;
-    </div>
-    <div class="pure-u-8-24 pure-u-md-3-24">
-        <img src="./img/unnamed.png" >
-    </div>
-    <div class="pure-u-2-24 pure-u-md-3-24">
-        &nbsp;
-    </div>
-    <div class="pure-u-8-24 pure-u-md-3-24">
-        <img src="./img/tunghai_logo.png">
-    </div>
-   <div class="pure-u-md-13-24 md-hide">
-        <h1 style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6">NCPU2018</h1>
-   </div>
-</div>
-
-
-
-    <div id="main">
-        
-
-
-    <div id="Head">2018全國私立大專校院程式競賽(2018 ACM-ICPC Taiwan NCPU) 開鑼了!</div>
-
-<div calss="pure-g">
-    <div class="pure-u-2-24"></div>
-    <div class="pure-u-20-24" style="font-size:20px"> <strong>
-        &emsp;&emsp;全球資訊科技蓬勃發展，各類資訊的理論與應用成果不斷，人工智慧、大數據、深度學習、無人車自動駕駛……等，而這一切基礎皆建基在程式設計，程式設計風潮以在全球掀起風起雲湧。
-        <br>
-        &emsp;&emsp;2018全國私立大專校院程式競賽(2018 ACM-ICPC Taiwan NCPU National Programming Contest for Private Universities)即將展開， 2018 NCPU 由東海大學主辦，此競賽是私立大學每年度重要程式設計賽事，遵循ACM ICPC程式設計競賽規格，提供私立大專院校學生一個切磋「武藝」的競賽機會，進而精進程式功力，為將來進入職場與進修開啟成功契機。歡迎全國私立大學生資訊相關科系同學組隊參加，在炎炎夏日來一場痛快的競技。</a>
-        </strong>    
-        <br>
-        <br>
-        <li>報名日期：2018年5月17日起至6月14日止。</strong></li>
-        <li>競賽日期：2018年7月5日 (星期四)</strong> </li>
-        <li>競賽地點：東海大學電子計算中心電腦教室</strong></li>
-        <li><strong style="font-size:23px;">獎勵方式:</strong>
-        <ul>
-            <li>第一名：獎金新台幣 15,000 元整及 ACM 獎狀</li>
-            <li>第二名：獎金新台幣 10,000元整及 ACM 獎狀</li>
-            <li>第三名：獎金新台幣 6,000元整及 ACM 獎狀</li>
-            <li>佳作若干組：獎金每組新台幣 3,000元整及 ACM 獎狀</li>
-        
-        </ul>
-        </li>
-        <li><strong style="font-size:23px;">參加名單</strong>
-            <table class="pure-table pure-table-horizontal" Style ="margin-top: 40px;">
-                <thead>
-                    <tr>
-                        <th>中文校名</th>
-                        <th>Team Name</th>
-                        <th>Name</th>
-                    </tr>
-                </thead>
-                <tr>
-                    <td>長榮大學</td>
-                    <td>StarBurstStream</td>
-                    <td>HUANG CHUN-CHING</td>
-                </tr>
-                <tr>
-                    <td>長榮大學</td>
-                    <td>StarBurstStream</td>
-                    <td>WU KO-SHANG</td>
-                </tr>
-                <tr>
-                    <td>長榮大學</td>
-                    <td>StarBurstStream</td>
-                    <td>SHIH PO-HAO</td>
-                </tr>
-
-                <tr class="pure-table-odd">
-                    <td>長榮大學</td>
-                    <td>cjcucsie109</td>
-                    <td>Syu Wei Zhong</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>長榮大學</td>
-                    <td>cjcucsie109</td>
-                    <td>SHIH JUI-EN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>長榮大學</td>
-                    <td>cjcucsie109</td>
-                    <td>ZHI-BIN Huang</td>
-                </tr>
-
-                <tr>
-                    <td>長榮大學</td>
-                    <td>IM.CJCU</td>
-                    <td>Kuan Feng-Sen</td>
-                </tr>
-                <tr>
-                    <td>長榮大學</td>
-                    <td>IM.CJCU</td>
-                    <td>Zhang YiZong</td>
-                </tr>
-                <tr>
-                    <td>長榮大學</td>
-                    <td>IM.CJCU</td>
-                    <td>YOU JIAJUN</td>
-                </tr>
-
-                <tr class="pure-table-odd">
-                    <td>中華大學</td>
-                    <td>C_c_lemon</td>
-                    <td>cheng-chun wu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>中華大學</td>
-                    <td>C_c_lemon</td>
-                    <td>ZHOU YI</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>中華大學</td>
-                    <td>C_c_lemon</td>
-                    <td>NIEN CHE CHIA</td>
-                </tr>
-                
-                <tr>
-                    <td>中華大學</td>
-                    <td>ABC_dog_bit_pig</td>
-                    <td>SHEN-HSUAN LIU</td>
-                </tr>
-                <tr>
-                    <td>中華大學</td>
-                    <td>ABC_dog_bit_pig</td>
-                    <td>ZhenHua Lu</td>
-                </tr>
-                <tr>
-                    <td>中華大學</td>
-                    <td>ABC_dog_bit_pig</td>
-                    <td>Ho XingWie</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>DontTouchMe</td>
-                    <td>Tsai Hsiang-Yu</td>
-                    </tr>
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>DontTouchMe</td>
-                    <td>Li TangYuan</td>
-                    </tr>
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>DontTouchMe</td>
-                    <td>Huang Wei-Kai</td>
-                </tr>
-                
-                <tr>
-                    <td>逢甲大學</td>
-                    <td>Stochastic Gradient Descent</td>
-                    <td>JHUANG JHE-SYUN</td>
-                </tr>
-                <tr>
-                    <td>逢甲大學</td>
-                    <td>Stochastic Gradient Descent</td>
-                    <td>CHIEN RUEI-ZIH</td>
-                </tr>
-                <tr>
-                    <td>逢甲大學</td>
-                    <td>Stochastic Gradient Descent</td>
-                    <td>WANG MENG-XUAN</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>Crane Game University</td>
-                    <td>Chen Jyun-hao</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>Crane Game University</td>
-                    <td>Teo Wei Juin</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>逢甲大學</td>
-                    <td>Crane Game University</td>
-                    <td>LIN PIN-HSIU</td>
-                </tr>
-                
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Raptor</td>
-                    <td>Liu Pin-Xuan</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Raptor</td>
-                    <td>Liang Po Chuan</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Raptor</td>
-                    <td>Hsu Cheng-Wen</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>FJU123</td>
-                    <td>Liu Jian-Liang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>FJU123</td>
-                    <td>Fu Yung-Fang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>FJU123</td>
-                    <td>KUAN-WEI ZENG</td>
-                </tr>
-                
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Denominator</td>
-                    <td>Liu yu chi</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Denominator</td>
-                    <td>Hsieh Crescent</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>Denominator</td>
-                    <td>Lai Yan-Cheng</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>AHP</td>
-                    <td>Li Jhen-Hao</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>AHP</td>
-                    <td>Chen Yu-an</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>AHP</td>
-                    <td>Li ZONG-HAO</td>
-                </tr>
-                
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>ElPsyCongroo</td>
-                    <td>Yu-Hao Huang</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>ElPsyCongroo</td>
-                    <td>Huang Pin-Han</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>ElPsyCongroo</td>
-                    <td>Zhong Bing Huan</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>zappers</td>
-                    <td>WANG YU-LI</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>zappers</td>
-                    <td>Lo Siang En</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>zappers</td>
-                    <td>LIN ZIH-JIE</td>
-                </tr>
-                
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>FJU_Team1</td>
-                    <td>Cheng Kai-Han</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>FJU_Team1</td>
-                    <td>CHI CHING</td>
-                </tr>
-                <tr>
-                    <td>輔仁大學</td>
-                    <td>FJU_Team1</td>
-                    <td>Su Huan Cheng</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>UP</td>
-                    <td>Peng Yenwei</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>UP</td>
-                    <td>HUANG TA YU</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>輔仁大學</td>
-                    <td>UP</td>
-                    <td>Lai Gary</td>
-                </tr>
-                
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_BlueWhale</td>
-                    <td>wei bin lin</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_BlueWhale</td>
-                    <td>FAN YIHANG</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_BlueWhale</td>
-                    <td>ZIYU ZHENG</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Shark</td>
-                    <td>TANG WUQIAN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Shark</td>
-                    <td>Yu-Sheng Chien</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Shark</td>
-                    <td>YANG JHE-CYUAN</td>
-                </tr>
-                
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Wolf</td>
-                    <td>KE CHENG ZHANG</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Wolf</td>
-                    <td>RONG-JI JHONG</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Wolf</td>
-                    <td>Tzu-Heng Lin</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Kuma</td>
-                    <td>HSU YOU-SHENG</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Kuma</td>
-                    <td>YEN-TING CHANG</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Kuma</td>
-                    <td>CHEN TIEN-YU</td>
-                </tr>
-                
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Smilodon</td>
-                    <td>CHEN ZHANG-MIN</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Smilodon</td>
-                    <td>LIN JHIH-CIAN</td>
-                </tr>
-                <tr>
-                    <td>銘傳大學</td>
-                    <td>MCU_Smilodon</td>
-                    <td>ZHAO JUN-YAN</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Narwhal</td>
-                    <td>LI GUAN-XIAN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Narwhal</td>
-                    <td>Li Ren Chung</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>銘傳大學</td>
-                    <td>MCU_Narwhal</td>
-                    <td>LI ZHENG-LUN</td>
-                </tr>
-               
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>Rdrrc</td>
-                    <td>Liao Yu-Chen</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>Rdrrc</td>
-                    <td>Li Li-Chun</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>Rdrrc</td>
-                    <td>Huang Po-Hao</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>I don't</td>
-                    <td>Zhuang YING-Qi</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>I don't</td>
-                    <td>LI YIMING</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>I don't</td>
-                    <td>Liu Kuan-Cheng</td>
-                </tr>
-                
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>&lt;OwOb</td>
-                    <td>Lin Xin Hui</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>&lt;OwOb</td>
-                    <td>HSIEH SHU-PO</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>&lt;OwOb</td>
-                    <td>JUAN TA-CHAN</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>Ohfreeya</td>
-                    <td>Yong-chen Jhuang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>Ohfreeya</td>
-                    <td>Po-Jen Huang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>Ohfreeya</td>
-                    <td>Yu-Cheng zhao</td>
-                </tr>
-                
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>PUCPEB</td>
-                    <td>Wu Yi Jung</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>PUCPEB</td>
-                    <td>Zhong Yun-Ru</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>PUCPEB</td>
-                    <td>Huang Tzu-Hsuan</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>JYWSOFT</td>
-                    <td>WU MIN-CHIN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>JYWSOFT</td>
-                    <td>Wu Hsing-Cheng</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>JYWSOFT</td>
-                    <td>Yang Jun-Yuan</td>
-                </tr>
-                
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>soy souce</td>
-                    <td>LIN JING-HAN</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>soy souce</td>
-                    <td>Ming-Chi Liu</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>soy souce</td>
-                    <td>Liao Mo-Gang</td>
-                </tr>
-
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>PU_JIA-PANG</td>
-                    <td>Syue-Jhu Wang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>PU_JIA-PANG</td>
-                    <td>Chen Wan Yu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>靜宜大學</td>
-                    <td>PU_JIA-PANG</td>
-                    <td>Chang Nai-Hsin</td>
-                </tr>
-
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>LingBangDang</td>
-                    <td>Liu AnLun</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>LingBangDang</td>
-                    <td>Wang Huijuan</td>
-                </tr>
-                <tr>
-                    <td>靜宜大學</td>
-                    <td>LingBangDang</td>
-                    <td>Wang Yi Ying</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>Brave cookie</td>
-                    <td>YU CHUNG-WEI</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>Brave cookie</td>
-                    <td>WU AI-LUN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>Brave cookie</td>
-                    <td>YEH YU-CHENG</td>
-                </tr>
-                
-                <tr>
-                    <td>淡江大學</td>
-                    <td>so how do we call this team</td>
-                    <td>LI XIN-YI</td>
-                </tr>
-                <tr>
-                    <td>淡江大學</td>
-                    <td>so how do we call this team</td>
-                    <td>ZHENG GUAN-YU</td>
-                </tr>
-                <tr>
-                    <td>淡江大學</td>
-                    <td>so how do we call this team</td>
-                    <td>Tang ChiaWei</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>TKU_CSIE</td>
-                    <td>HSIEH HSIU-FANG</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>TKU_CSIE</td>
-                    <td>Kuo Mei-Yu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>TKU_CSIE</td>
-                    <td>Hsin Chiao Weng</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>淡江大學</td>
-                    <td>TKU_CSIE</td>
-                    <td>Jun-Cheng Yang</td>
-                </tr>
-                
-                <tr>
-                    <td>大同大學</td>
-                    <td>Find the red Ace</td>
-                    <td>Kuo Cheng-Hua</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>Find the red Ace</td>
-                    <td>Hsu Hung-Yang</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>Find the red Ace</td>
-                    <td>Wu yun-cheng</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>Find the red Ace</td>
-                    <td>Chen Yu-Yuan</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>BBQ</td>
-                    <td>TSAI HUNG CHIN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>BBQ</td>
-                    <td>TSAI HSIN MIN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>BBQ</td>
-                    <td>Yang Huei-Ru</td>
-                </tr>
-                
-                <tr>
-                    <td>大同大學</td>
-                    <td>ZHOWDOUGANBANG</td>
-                    <td>Kuo-Chan Sheng</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>ZHOWDOUGANBANG</td>
-                    <td>JHENG ZE-WEI</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>ZHOWDOUGANBANG</td>
-                    <td>chiu chung-ping</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>ZHOWDOUGANBANG</td>
-                    <td>KAO TZU-HAO</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>winner winner chicken dinner</td>
-                    <td>jia-jing Tang</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>winner winner chicken dinner</td>
-                    <td>NE LIN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>winner winner chicken dinner</td>
-                    <td>SHOU CI DU</td>
-                </tr>
-                
-                <tr>
-                    <td>大同大學</td>
-                    <td>I1B2018</td>
-                    <td>Heng Rui Gu</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>I1B2018</td>
-                    <td>Zhiwei Hong</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>I1B2018</td>
-                    <td>Mou Zong-Chain</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>TaiwenBangDong</td>
-                    <td>Che-Wei Li</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>TaiwenBangDong</td>
-                    <td>Meng-Ju Lu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>TaiwenBangDong</td>
-                    <td>Lin JiaCheng</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>大同大學</td>
-                    <td>TaiwenBangDong</td>
-                    <td>Yan-ting Yu</td>
-                </tr>
-                
-                <tr>
-                    <td>大同大學</td>
-                    <td>iLoveTWYU &lt;3</td>
-                    <td>Wei Yu-Chi</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>iLoveTWYU &lt;3</td>
-                    <td>Guo Jia-Yu</td>
-                </tr>
-                <tr>
-                    <td>大同大學</td>
-                    <td>iLoveTWYU &lt;3</td>
-                    <td>Pao YiRu</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>東海大學</td>
-                    <td>Your Inverse</td>
-                    <td>Wang Hsin Hao</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>東海大學</td>
-                    <td>Your Inverse</td>
-                    <td>Cheng-Yan Gu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>東海大學</td>
-                    <td>Your Inverse</td>
-                    <td>Lin Chih Yu</td>
-                </tr>
-                
-                <tr>
-                    <td>元智大學</td>
-                    <td>Rubber Conquest</td>
-                    <td>HSU WEI-TING</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>Rubber Conquest</td>
-                    <td>Chen Liang-Yu</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>Rubber Conquest</td>
-                    <td>LO ALEX</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CHY</td>
-                    <td>Hsu Caio-jhen</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CHY</td>
-                    <td>Yeh Ting-yu</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CHY</td>
-                    <td>Chen Hsin-hsuan</td>
-                </tr>
-                
-                <tr>
-                    <td>元智大學</td>
-                    <td>Zero|Hero</td>
-                    <td>CHANG CHU-LING</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>Zero|Hero</td>
-                    <td>Chung Sebastian</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>Zero|Hero</td>
-                    <td>Hsu yung peng</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>Coding never stops</td>
-                    <td>Lin Yu-An</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>Coding never stops</td>
-                    <td>Chen Bo-Fan</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>Coding never stops</td>
-                    <td>Chod JIA-JHEN</td>
-                </tr>
-                
-                <tr>
-                    <td>元智大學</td>
-                    <td>OldDriver</td>
-                    <td>Chen Yu-An</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>OldDriver</td>
-                    <td>Wang Shih-Chueh</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>OldDriver</td>
-                    <td>Chen Ruei-Yang</td>
-                </tr>
-                
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>BieBaMauDangWanTsan</td>
-                    <td>Dai pin-yuan</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>BieBaMauDangWanTsan</td>
-                    <td>Yu Min-Hsuan</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>BieBaMauDangWanTsan</td>
-                    <td>Zhang Zhong-Wei</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>BieBaMauDangWanTsan</td>
-                    <td>Lu Ming-Chen</td>
-                </tr>
-                
-                <tr>
-                    <td>元智大學</td>
-                    <td>L. Crocea algorithm</td>
-                    <td>Lin Jiun-Sheng</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>L. Crocea algorithm</td>
-                    <td>Huang Dian-Jheng</td>
-                </tr>
-                <tr>
-                    <td>元智大學</td>
-                    <td>L. Crocea algorithm</td>
-                    <td>Huang Chuan-Shun</td>
-                </tr>
-            
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CSDD</td>
-                    <td>YOU YU-LIN</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CSDD</td>
-                    <td>Hsieh Tomy</td>
-                </tr>
-                <tr class="pure-table-odd">
-                    <td>元智大學</td>
-                    <td>CSDD</td>
-                    <td>CHANG YEN-CHENG</td>
-                </tr>
-                </table>
-        </li>
-
-        <br>
-
-    </div>
-    <div class="pure-u-2-24"></div>
-    
-    </div>
-</div>
+        <div class="pure-g" style="height: 450px;line-height: 450px">
+            <div class="pure-u-3-24 pure-u-md-2-24">
+                &nbsp;
+            </div>
+            <div class="pure-u-8-24 pure-u-md-3-24">
+                <img src="./img/unnamed.png">
+            </div>
+            <div class="pure-u-2-24 pure-u-md-3-24">
+                &nbsp;
+            </div>
+            <div class="pure-u-8-24 pure-u-md-3-24">
+                <img src="./img/tunghai_logo.png">
+            </div>
+            <div class="pure-u-md-13-24 md-hide">
+                <h1
+                    style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6">
+                    NCPU2018</h1>
+            </div>
+        </div>
 
 
 
+        <div id="main">
 
 
-<script src="js/ui.js"></script>
-<div align="center">
-        <hr />
-            <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號    電話 ：(04) 2359-0121  ext. 33806     信箱 ：ncpu2018@thu.edu.tw
-        </span>
-        <hr />
-    </div>
+
+            <div id="Head">2018全國私立大專校院程式競賽(2018 ACM-ICPC Taiwan NCPU) 開鑼了!</div>
+
+            <div calss="pure-g">
+                <div class="pure-u-2-24"></div>
+                <div class="pure-u-20-24" style="font-size:20px"> <strong>
+                        &emsp;&emsp;全球資訊科技蓬勃發展，各類資訊的理論與應用成果不斷，人工智慧、大數據、深度學習、無人車自動駕駛……等，而這一切基礎皆建基在程式設計，程式設計風潮以在全球掀起風起雲湧。
+                        <br>
+                        &emsp;&emsp;2018全國私立大專校院程式競賽(2018 ACM-ICPC Taiwan NCPU National Programming Contest for Private
+                        Universities)即將展開， 2018 NCPU 由東海大學主辦，此競賽是私立大學每年度重要程式設計賽事，遵循ACM
+                        ICPC程式設計競賽規格，提供私立大專院校學生一個切磋「武藝」的競賽機會，進而精進程式功力，為將來進入職場與進修開啟成功契機。歡迎全國私立大學生資訊相關科系同學組隊參加，在炎炎夏日來一場痛快的競技。</a>
+                    </strong>
+                    <br>
+                    <br>
+                    <li>報名日期：2018年5月17日起至6月14日止。</strong></li>
+                    <li>競賽日期：2018年7月5日 (星期四)</strong> </li>
+                    <li>競賽地點：東海大學電子計算中心電腦教室</strong></li>
+                    <li><strong style="font-size:23px;">獎勵方式:</strong>
+                        <ul>
+                            <li>第一名：獎金新台幣 15,000 元整及 ACM 獎狀</li>
+                            <li>第二名：獎金新台幣 10,000元整及 ACM 獎狀</li>
+                            <li>第三名：獎金新台幣 6,000元整及 ACM 獎狀</li>
+                            <li>佳作若干組：獎金每組新台幣 3,000元整及 ACM 獎狀</li>
+
+                        </ul>
+                    </li>
+                    <li><strong style="font-size:23px;">參加名單</strong>
+                        <table class="table" Style="margin-top: 40px;">
+                            <thead>
+                                <tr>
+                                    <th scope="col">中文校名</th>
+                                    <th scope="col">Team Name</th>
+                                    <th scope="col">Name</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>StarBurstStream</td>
+                                <td>HUANG CHUN-CHING</td>
+                            </tr>
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>StarBurstStream</td>
+                                <td>WU KO-SHANG</td>
+                            </tr>
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>StarBurstStream</td>
+                                <td>SHIH PO-HAO</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>長榮大學</td>
+                                <td>cjcucsie109</td>
+                                <td>Syu Wei Zhong</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>長榮大學</td>
+                                <td>cjcucsie109</td>
+                                <td>SHIH JUI-EN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>長榮大學</td>
+                                <td>cjcucsie109</td>
+                                <td>ZHI-BIN Huang</td>
+                            </tr>
+
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>IM.CJCU</td>
+                                <td>Kuan Feng-Sen</td>
+                            </tr>
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>IM.CJCU</td>
+                                <td>Zhang YiZong</td>
+                            </tr>
+                            <tr>
+                                <td>長榮大學</td>
+                                <td>IM.CJCU</td>
+                                <td>YOU JIAJUN</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>中華大學</td>
+                                <td>C_c_lemon</td>
+                                <td>cheng-chun wu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>中華大學</td>
+                                <td>C_c_lemon</td>
+                                <td>ZHOU YI</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>中華大學</td>
+                                <td>C_c_lemon</td>
+                                <td>NIEN CHE CHIA</td>
+                            </tr>
+
+                            <tr>
+                                <td>中華大學</td>
+                                <td>ABC_dog_bit_pig</td>
+                                <td>SHEN-HSUAN LIU</td>
+                            </tr>
+                            <tr>
+                                <td>中華大學</td>
+                                <td>ABC_dog_bit_pig</td>
+                                <td>ZhenHua Lu</td>
+                            </tr>
+                            <tr>
+                                <td>中華大學</td>
+                                <td>ABC_dog_bit_pig</td>
+                                <td>Ho XingWie</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>DontTouchMe</td>
+                                <td>Tsai Hsiang-Yu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>DontTouchMe</td>
+                                <td>Li TangYuan</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>DontTouchMe</td>
+                                <td>Huang Wei-Kai</td>
+                            </tr>
+
+                            <tr>
+                                <td>逢甲大學</td>
+                                <td>Stochastic Gradient Descent</td>
+                                <td>JHUANG JHE-SYUN</td>
+                            </tr>
+                            <tr>
+                                <td>逢甲大學</td>
+                                <td>Stochastic Gradient Descent</td>
+                                <td>CHIEN RUEI-ZIH</td>
+                            </tr>
+                            <tr>
+                                <td>逢甲大學</td>
+                                <td>Stochastic Gradient Descent</td>
+                                <td>WANG MENG-XUAN</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>Crane Game University</td>
+                                <td>Chen Jyun-hao</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>Crane Game University</td>
+                                <td>Teo Wei Juin</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>逢甲大學</td>
+                                <td>Crane Game University</td>
+                                <td>LIN PIN-HSIU</td>
+                            </tr>
+
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Raptor</td>
+                                <td>Liu Pin-Xuan</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Raptor</td>
+                                <td>Liang Po Chuan</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Raptor</td>
+                                <td>Hsu Cheng-Wen</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>FJU123</td>
+                                <td>Liu Jian-Liang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>FJU123</td>
+                                <td>Fu Yung-Fang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>FJU123</td>
+                                <td>KUAN-WEI ZENG</td>
+                            </tr>
+
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Denominator</td>
+                                <td>Liu yu chi</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Denominator</td>
+                                <td>Hsieh Crescent</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>Denominator</td>
+                                <td>Lai Yan-Cheng</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>AHP</td>
+                                <td>Li Jhen-Hao</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>AHP</td>
+                                <td>Chen Yu-an</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>AHP</td>
+                                <td>Li ZONG-HAO</td>
+                            </tr>
+
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>ElPsyCongroo</td>
+                                <td>Yu-Hao Huang</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>ElPsyCongroo</td>
+                                <td>Huang Pin-Han</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>ElPsyCongroo</td>
+                                <td>Zhong Bing Huan</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>zappers</td>
+                                <td>WANG YU-LI</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>zappers</td>
+                                <td>Lo Siang En</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>zappers</td>
+                                <td>LIN ZIH-JIE</td>
+                            </tr>
+
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>FJU_Team1</td>
+                                <td>Cheng Kai-Han</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>FJU_Team1</td>
+                                <td>CHI CHING</td>
+                            </tr>
+                            <tr>
+                                <td>輔仁大學</td>
+                                <td>FJU_Team1</td>
+                                <td>Su Huan Cheng</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>UP</td>
+                                <td>Peng Yenwei</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>UP</td>
+                                <td>HUANG TA YU</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>輔仁大學</td>
+                                <td>UP</td>
+                                <td>Lai Gary</td>
+                            </tr>
+
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_BlueWhale</td>
+                                <td>wei bin lin</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_BlueWhale</td>
+                                <td>FAN YIHANG</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_BlueWhale</td>
+                                <td>ZIYU ZHENG</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Shark</td>
+                                <td>TANG WUQIAN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Shark</td>
+                                <td>Yu-Sheng Chien</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Shark</td>
+                                <td>YANG JHE-CYUAN</td>
+                            </tr>
+
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Wolf</td>
+                                <td>KE CHENG ZHANG</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Wolf</td>
+                                <td>RONG-JI JHONG</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Wolf</td>
+                                <td>Tzu-Heng Lin</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Kuma</td>
+                                <td>HSU YOU-SHENG</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Kuma</td>
+                                <td>YEN-TING CHANG</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Kuma</td>
+                                <td>CHEN TIEN-YU</td>
+                            </tr>
+
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Smilodon</td>
+                                <td>CHEN ZHANG-MIN</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Smilodon</td>
+                                <td>LIN JHIH-CIAN</td>
+                            </tr>
+                            <tr>
+                                <td>銘傳大學</td>
+                                <td>MCU_Smilodon</td>
+                                <td>ZHAO JUN-YAN</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Narwhal</td>
+                                <td>LI GUAN-XIAN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Narwhal</td>
+                                <td>Li Ren Chung</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>銘傳大學</td>
+                                <td>MCU_Narwhal</td>
+                                <td>LI ZHENG-LUN</td>
+                            </tr>
+
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>Rdrrc</td>
+                                <td>Liao Yu-Chen</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>Rdrrc</td>
+                                <td>Li Li-Chun</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>Rdrrc</td>
+                                <td>Huang Po-Hao</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>I don't</td>
+                                <td>Zhuang YING-Qi</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>I don't</td>
+                                <td>LI YIMING</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>I don't</td>
+                                <td>Liu Kuan-Cheng</td>
+                            </tr>
+
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>&lt;OwOb</td>
+                                <td>Lin Xin Hui</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>&lt;OwOb</td>
+                                <td>HSIEH SHU-PO</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>&lt;OwOb</td>
+                                <td>JUAN TA-CHAN</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>Ohfreeya</td>
+                                <td>Yong-chen Jhuang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>Ohfreeya</td>
+                                <td>Po-Jen Huang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>Ohfreeya</td>
+                                <td>Yu-Cheng zhao</td>
+                            </tr>
+
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>PUCPEB</td>
+                                <td>Wu Yi Jung</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>PUCPEB</td>
+                                <td>Zhong Yun-Ru</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>PUCPEB</td>
+                                <td>Huang Tzu-Hsuan</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>JYWSOFT</td>
+                                <td>WU MIN-CHIN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>JYWSOFT</td>
+                                <td>Wu Hsing-Cheng</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>JYWSOFT</td>
+                                <td>Yang Jun-Yuan</td>
+                            </tr>
+
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>soy souce</td>
+                                <td>LIN JING-HAN</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>soy souce</td>
+                                <td>Ming-Chi Liu</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>soy souce</td>
+                                <td>Liao Mo-Gang</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>PU_JIA-PANG</td>
+                                <td>Syue-Jhu Wang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>PU_JIA-PANG</td>
+                                <td>Chen Wan Yu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>靜宜大學</td>
+                                <td>PU_JIA-PANG</td>
+                                <td>Chang Nai-Hsin</td>
+                            </tr>
+
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>LingBangDang</td>
+                                <td>Liu AnLun</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>LingBangDang</td>
+                                <td>Wang Huijuan</td>
+                            </tr>
+                            <tr>
+                                <td>靜宜大學</td>
+                                <td>LingBangDang</td>
+                                <td>Wang Yi Ying</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>Brave cookie</td>
+                                <td>YU CHUNG-WEI</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>Brave cookie</td>
+                                <td>WU AI-LUN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>Brave cookie</td>
+                                <td>YEH YU-CHENG</td>
+                            </tr>
+
+                            <tr>
+                                <td>淡江大學</td>
+                                <td>so how do we call this team</td>
+                                <td>LI XIN-YI</td>
+                            </tr>
+                            <tr>
+                                <td>淡江大學</td>
+                                <td>so how do we call this team</td>
+                                <td>ZHENG GUAN-YU</td>
+                            </tr>
+                            <tr>
+                                <td>淡江大學</td>
+                                <td>so how do we call this team</td>
+                                <td>Tang ChiaWei</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>TKU_CSIE</td>
+                                <td>HSIEH HSIU-FANG</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>TKU_CSIE</td>
+                                <td>Kuo Mei-Yu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>TKU_CSIE</td>
+                                <td>Hsin Chiao Weng</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>淡江大學</td>
+                                <td>TKU_CSIE</td>
+                                <td>Jun-Cheng Yang</td>
+                            </tr>
+
+                            <tr>
+                                <td>大同大學</td>
+                                <td>Find the red Ace</td>
+                                <td>Kuo Cheng-Hua</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>Find the red Ace</td>
+                                <td>Hsu Hung-Yang</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>Find the red Ace</td>
+                                <td>Wu yun-cheng</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>Find the red Ace</td>
+                                <td>Chen Yu-Yuan</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>BBQ</td>
+                                <td>TSAI HUNG CHIN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>BBQ</td>
+                                <td>TSAI HSIN MIN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>BBQ</td>
+                                <td>Yang Huei-Ru</td>
+                            </tr>
+
+                            <tr>
+                                <td>大同大學</td>
+                                <td>ZHOWDOUGANBANG</td>
+                                <td>Kuo-Chan Sheng</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>ZHOWDOUGANBANG</td>
+                                <td>JHENG ZE-WEI</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>ZHOWDOUGANBANG</td>
+                                <td>chiu chung-ping</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>ZHOWDOUGANBANG</td>
+                                <td>KAO TZU-HAO</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>winner winner chicken dinner</td>
+                                <td>jia-jing Tang</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>winner winner chicken dinner</td>
+                                <td>NE LIN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>winner winner chicken dinner</td>
+                                <td>SHOU CI DU</td>
+                            </tr>
+
+                            <tr>
+                                <td>大同大學</td>
+                                <td>I1B2018</td>
+                                <td>Heng Rui Gu</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>I1B2018</td>
+                                <td>Zhiwei Hong</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>I1B2018</td>
+                                <td>Mou Zong-Chain</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>TaiwenBangDong</td>
+                                <td>Che-Wei Li</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>TaiwenBangDong</td>
+                                <td>Meng-Ju Lu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>TaiwenBangDong</td>
+                                <td>Lin JiaCheng</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>大同大學</td>
+                                <td>TaiwenBangDong</td>
+                                <td>Yan-ting Yu</td>
+                            </tr>
+
+                            <tr>
+                                <td>大同大學</td>
+                                <td>iLoveTWYU &lt;3</td>
+                                <td>Wei Yu-Chi</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>iLoveTWYU &lt;3</td>
+                                <td>Guo Jia-Yu</td>
+                            </tr>
+                            <tr>
+                                <td>大同大學</td>
+                                <td>iLoveTWYU &lt;3</td>
+                                <td>Pao YiRu</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>東海大學</td>
+                                <td>Your Inverse</td>
+                                <td>Wang Hsin Hao</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>東海大學</td>
+                                <td>Your Inverse</td>
+                                <td>Cheng-Yan Gu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>東海大學</td>
+                                <td>Your Inverse</td>
+                                <td>Lin Chih Yu</td>
+                            </tr>
+
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Rubber Conquest</td>
+                                <td>HSU WEI-TING</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Rubber Conquest</td>
+                                <td>Chen Liang-Yu</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Rubber Conquest</td>
+                                <td>LO ALEX</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CHY</td>
+                                <td>Hsu Caio-jhen</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CHY</td>
+                                <td>Yeh Ting-yu</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CHY</td>
+                                <td>Chen Hsin-hsuan</td>
+                            </tr>
+
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Zero|Hero</td>
+                                <td>CHANG CHU-LING</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Zero|Hero</td>
+                                <td>Chung Sebastian</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>Zero|Hero</td>
+                                <td>Hsu yung peng</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>Coding never stops</td>
+                                <td>Lin Yu-An</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>Coding never stops</td>
+                                <td>Chen Bo-Fan</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>Coding never stops</td>
+                                <td>Chod JIA-JHEN</td>
+                            </tr>
+
+                            <tr>
+                                <td>元智大學</td>
+                                <td>OldDriver</td>
+                                <td>Chen Yu-An</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>OldDriver</td>
+                                <td>Wang Shih-Chueh</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>OldDriver</td>
+                                <td>Chen Ruei-Yang</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>BieBaMauDangWanTsan</td>
+                                <td>Dai pin-yuan</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>BieBaMauDangWanTsan</td>
+                                <td>Yu Min-Hsuan</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>BieBaMauDangWanTsan</td>
+                                <td>Zhang Zhong-Wei</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>BieBaMauDangWanTsan</td>
+                                <td>Lu Ming-Chen</td>
+                            </tr>
+
+                            <tr>
+                                <td>元智大學</td>
+                                <td>L. Crocea algorithm</td>
+                                <td>Lin Jiun-Sheng</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>L. Crocea algorithm</td>
+                                <td>Huang Dian-Jheng</td>
+                            </tr>
+                            <tr>
+                                <td>元智大學</td>
+                                <td>L. Crocea algorithm</td>
+                                <td>Huang Chuan-Shun</td>
+                            </tr>
+
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CSDD</td>
+                                <td>YOU YU-LIN</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CSDD</td>
+                                <td>Hsieh Tomy</td>
+                            </tr>
+                            <tr class="pure-table-odd">
+                                <td>元智大學</td>
+                                <td>CSDD</td>
+                                <td>CHANG YEN-CHENG</td>
+                            </tr>
+                        </table>
+                    </li>
+
+                    <br>
+
+                </div>
+                <div class="pure-u-2-24"></div>
+
+            </div>
+        </div>
+
+
+
+
+
+        <script src="js/ui.js"></script>
+        <div align="center">
+            <hr />
+            <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號 電話 ：(04) 2359-0121 ext. 33806 信箱 ：ncpu2018@thu.edu.tw
+            </span>
+            <hr />
+        </div>
 </body>
+
 </html>

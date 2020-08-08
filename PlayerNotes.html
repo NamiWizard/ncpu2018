@@ -1,174 +1,205 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <meta name="description"
+        content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>NCPU2018選手須知</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-        <!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
         <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-        <!--<![endif]-->
-        <style type="text/css">
-            img{
-                   width: 100%;
-               }  
-           #Head{
-               border-top:5px rgb(67, 207, 200) solid;
-               border-bottom:5px rgb(67, 207, 200) solid;
-               padding:1.25%;
-               padding-left: 0%;
-               margin-top:30px;
-               margin-bottom:30px;
-               margin-left: 5%;
-               margin-right: 5%;
-               font-weight: bold;
-               font-size: 300%;
-               text-align: left;
-               box-sizing: border-box;
-           }
-            
-            .text-title{
-                color:rgb(56, 107, 247)
-               }
-   
-            .text1{
-                text-align: left;
-                }
-   
-            .strong{ 
-               font-weight:bold;
-                color: #FF0000;
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
+    <style type="text/css">
+        img {
+            width: 100%;
+        }
+
+        #Head {
+            border-top: 5px rgb(67, 207, 200) solid;
+            border-bottom: 5px rgb(67, 207, 200) solid;
+            padding: 1.25%;
+            padding-left: 0%;
+            margin-top: 30px;
+            margin-bottom: 30px;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-weight: bold;
+            font-size: 300%;
+            text-align: left;
+            box-sizing: border-box;
+        }
+
+        .text-title {
+            color: rgb(56, 107, 247)
+        }
+
+        .text1 {
+            text-align: left;
+        }
+
+        .strong {
+            font-weight: bold;
+            color: #FF0000;
+        }
+
+        @media screen and(max-width:600px) {
+            .content {
+                width: 100%;
             }
-                   @media screen and(max-width:600px){.content{width:100%;}}   
-                   #carouselExampleControls{
-                       position:absolute;
-                       top:0px;
-                       left:0px;
-                       z-index:-1;
-                       margin-left:150px; 
-                   }
-                   @media (max-width: 48em) {
-                       #carouselExampleControls{
-                       margin-left:0px; 
-                       }
-                   }
-                   @media (max-width: 48em) {
-       .md-hide {
-        display: none; 
-       }
-   }
-   
-   
-   .carousel-item > img {
-       height: 450px;
-       object-fit:cover;
-   }
-            
-        </style>
-    
+        }
+
+        #carouselExampleControls {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            margin-left: 150px;
+        }
+
+        @media (max-width: 48em) {
+            #carouselExampleControls {
+                margin-left: 0px;
+            }
+        }
+
+        @media (max-width: 48em) {
+            .md-hide {
+                display: none;
+            }
+        }
+
+
+        .carousel-item>img {
+            height: 450px;
+            object-fit: cover;
+        }
+    </style>
+
 </head>
+
 <body style="margin:0px">
 
 
-    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img class="d-block"  src="./img/school1.jpg" alt="First slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school2.jpg" alt="Second slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school3.jpg" alt="Third slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
-          </div>
-          <div class="carousel-item">
-            <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
-          </div>
+            <div class="carousel-item active">
+                <img class="d-block" src="./img/school1.jpg" alt="First slide">
+            </div>
             <div class="carousel-item">
-            <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
-          </div>
-      
+                <img class="d-block " src="./img/school2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
+            </div>
+
         </div>
 
-      </div>
-
-
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">NCPU2018</a>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">最新消息</a></li>
-                <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
-                <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
-                <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
-                <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
-                <li class="pure-menu-item  menu-item-divided pure-menu-selected"><a href="./PlayerNotes.html" class="pure-menu-link">選手須知</a></li>
-                <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
-                <li class="pure-menu-item"><a href="./commonProblem.html" class="pure-menu-link">常見問題</a></li>
-                <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
-                <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
-                <br>
-                <li style="line-height: 10px;">主辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link" > 東海大學<br>資訊工程學系</a></li>
-                <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/" class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
-                <br>
-                <li style="line-height: 10px;">協辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link" > ACM ICPC <br>Contest Council<br> for Taiwan</a></li>
-                <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php" class="pure-menu-link">東海大學<br>工學院</a></li>
-                <li class="pure-menu-item"><a href="http://www.csroc.org.tw/" class="pure-menu-link" >中華民國<br>電腦學會</a></li>
-                <li class="pure-menu-item"><a href="http://aictsp.thu.edu.tw" class="pure-menu-link" >台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
-            </ul>
-        </div>
     </div>
 
 
-    <div class="pure-g" style="height: 450px;line-height: 450px">
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <svg fill="#CCCCCC" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40">
+
+                <path fill-rule="evenodd"
+                    d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+                </path>
+            </svg>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">NCPU2018</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">最新消息</a></li>
+                    <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
+                    <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
+                    <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
+                    <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
+                    <li class="pure-menu-item  menu-item-divided pure-menu-selected"><a href="./PlayerNotes.html"
+                            class="pure-menu-link">選手須知</a></li>
+                    <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
+                    <li class="pure-menu-item"><a href="./commonProblem.html" class="pure-menu-link">常見問題</a></li>
+                    <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
+                    <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
+                    <br>
+                    <li style="line-height: 10px;">主辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link">
+                            東海大學<br>資訊工程學系</a></li>
+                    <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/"
+                            class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
+                    <br>
+                    <li style="line-height: 10px;">協辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link"> ACM ICPC
+                            <br>Contest Council<br> for Taiwan</a></li>
+                    <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php"
+                            class="pure-menu-link">東海大學<br>工學院</a></li>
+                    <li class="pure-menu-item"><a href="http://www.csroc.org.tw/"
+                            class="pure-menu-link">中華民國<br>電腦學會</a></li>
+                    <li class="pure-menu-item"><a href="http://aictsp.thu.edu.tw"
+                            class="pure-menu-link">台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="pure-g" style="height: 450px;line-height: 450px">
             <div class="pure-u-3-24 pure-u-md-2-24">
                 &nbsp;
             </div>
             <div class="pure-u-8-24 pure-u-md-3-24">
-                <img src="./img/unnamed.png" >
+                <img src="./img/unnamed.png">
             </div>
             <div class="pure-u-2-24 pure-u-md-3-24">
                 &nbsp;
@@ -177,79 +208,108 @@
                 <img src="./img/tunghai_logo.png">
             </div>
             <div class="pure-u-md-13-24">
-                    <h1 style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6  ">NCPU2018</h1>
-               </div>
+                <h1
+                    style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6  ">
+                    NCPU2018</h1>
+            </div>
         </div>
-        
-   <div id="Head">選手須知</div>
 
-   <div class="pure-g">
-    <div class="pure-u-2-24"> </div>
-    <div class="pure-u-20-24">
-<strong>
-    <h3 class="strong">競賽規則</h3>
-        <p class="text1">(一). <span class="strong">選手報到時，請出示學生證(應屆畢業生請出示畢業證書或學校提供之相關證明)。</span></p>
-      
-        <p  class="text1"> (二). 競賽開始時，各位選手請將個人之合法參賽證明文件置於桌上明顯處，提供查驗，查驗完畢後可以收回；視需要現場監賽人員，可以要求選手再度出示證件。 </p>
-       
-        <p  class="text1">(三).  選手不能攜帶任何資料、字典、書包、食物、手機、電子媒體等進場。上述私人物品，請放置於自己書包內，並依照監賽人員之指示，放置於教室外，或教室前後。
-        <span class="strong">選手桌面僅能置放考試用的電腦設備、「選手注意事項」與規定數量之紙張、筆與身份證明文件。 </span></p>
+        <div id="Head">選手須知</div>
 
-        <p  class="text1"> (四). <span class="strong">考生的手機不得隨身攜帶</span>
-        ，手機應關機後，放置於自己書包內(若無書包，手機可交由監考人員暫時保管)。 </p>
-     
-        <p class="text1">(五). 競賽期間，各隊伍至多一人可離開座位。離座後，可以如廁或使用舉辦單位提供之點心，但不得與他人研討競賽題目。選手每次離座不得超過30分鐘，且間隔時間不得少於20分鐘。有特殊情況者則需要經過主辦單位同意。</p>
-      
-        <p class="text1">(六).  競賽期間，若有電腦機器相關問題，可詢問現場監賽人員。</p>
-      
-        <p class="text1">(七). 選手所送出之程式碼均留存於伺服器中。競賽後，將會進行程式碼比對。若發現有作弊(競賽進行中或競賽後)，由工作人員提報作弊選手所屬學校處置。作弊選手的競賽成績除將作廢外，且將提報ACM ICPC相關單位列入紀錄。 </p>
+        <div class="pure-g">
+            <div class="pure-u-2-24"> </div>
+            <div class="pure-u-20-24">
+                <strong>
+                    <h3 class="strong">競賽規則</h3>
+                    <p class="text1">(一). <span class="strong">選手報到時，請出示學生證(應屆畢業生請出示畢業證書或學校提供之相關證明)。</span></p>
 
-        <p class="text1">(八).  選手不得有利用競賽評分系統之漏洞，存取與競賽無關之網路資源達成影響競賽公平性之行為，違規者將立即停止其競賽資格，並提報所屬學校及相關單位處理。</p>
-        
-        <h3 class="strong">程式設計規範</h3>
-        <p  class="text1">(一). <span class="strong">考試的程式設計，所有輸入與輸出均採取「標準輸入」(stdin)與標準輸出」(stdout)，不可使用檔案讀寫。</span></p>
+                    <p class="text1"> (二). 競賽開始時，各位選手請將個人之合法參賽證明文件置於桌上明顯處，提供查驗，查驗完畢後可以收回；視需要現場監賽人員，可以要求選手再度出示證件。 </p>
 
-        撰寫程式時，於 C 語言，可使用如 scanf 與 printf 函式；於 C++，可使用如 cin 與cout 物件。 </ul>
-        <p  class="text1">(二). 輸入與輸出資料全為純文字資料，必須完全依照題目的輸入與輸出格式撰寫程式。程式必須通過評判系統的「隱藏測試資料」(不公開)，才算「答對」。</p>
+                    <p class="text1">(三). 選手不能攜帶任何資料、字典、書包、食物、手機、電子媒體等進場。上述私人物品，請放置於自己書包內，並依照監賽人員之指示，放置於教室外，或教室前後。
+                        <span class="strong">選手桌面僅能置放考試用的電腦設備、「選手注意事項」與規定數量之紙張、筆與身份證明文件。 </span></p>
 
-        <p  class="text1">(三). 所撰寫的程式必須「選擇正確的語言」送繳程式。 </p>
-        </strong>
+                    <p class="text1"> (四). <span class="strong">考生的手機不得隨身攜帶</span>
+                        ，手機應關機後，放置於自己書包內(若無書包，手機可交由監考人員暫時保管)。 </p>
 
-        <h3 class="strong">評判伺服器訊息</h3>
-        
-        <ul>
-        <strong>
-        <li>Yes <ul><li>答對</li></ul></li>
-        <li>No - Compilation Error <ul><li>無法成功編譯</li></ul></li>
-        <li>No - Run-time Error <ul><li>無法正常執行完畢</li></ul></li>
-        <li>No - Time-limit Exceeded<ul><li>在時間限制內無法執行完畢</li></ul></li>
-        <li>No - Wrong Answer<ul><li>答案是錯的，格式不符合要求也算錯。</li></ul></li>
-        <li>No - Broken Pipe<ul><li>如果程式無法在執行結束之前，成功讀入所有測試資料，有可能因為PC<sup>2</sup>設計上的瑕疵，將會產生 Broken Pipe 的例外訊息，
-         無法判別是 Time-limit Exceeded 或是 Run-time Error。</li>
-        <li>If your program cannot complete reading all input before it is terminated, then you should get this response. This is a bug of PC<sup>2</sup> 9.2.4. 
-        We cannot distinguish which kind of errors of your program in a short time, but it should be a Run-time Error or a Time-limit Exceeded in general.</li></ul>
-        </li>
-        </strong>
-        </ul>
-        
-        <strong>
-        <h3 class="strong">計分方式與排名</h3>
-        <p  class="text1">(一). 採用 ACM ICPC 評分方式，送繳程式之結果，只有「對」與「錯」。答對題數較多者，排名較前。答對題數相同者，以解題時間總和決定排名。解題時間總和，係指考試開始至解題正確所經過的時間，再加上罰扣時間(每送出題解錯誤一次罰加20 分鐘)。
-            <span class="strong">答錯的題目不計時間及罰扣時間。</span> </p>
+                    <p class="text1">(五).
+                        競賽期間，各隊伍至多一人可離開座位。離座後，可以如廁或使用舉辦單位提供之點心，但不得與他人研討競賽題目。選手每次離座不得超過30分鐘，且間隔時間不得少於20分鐘。有特殊情況者則需要經過主辦單位同意。
+                    </p>
 
-        <p  class="text1">(二).  送繳程式後，評判系統若已有「送繳」(NEW)紀錄，而尚未批改，請勿再重複送繳，以免遭罰扣時間。</p>
-        </strong>
-    </div>
-    
-    </div>
+                    <p class="text1">(六). 競賽期間，若有電腦機器相關問題，可詢問現場監賽人員。</p>
 
-    
-    <script src="js/ui.js"></script>
-    <div align="center">
+                    <p class="text1">(七).
+                        選手所送出之程式碼均留存於伺服器中。競賽後，將會進行程式碼比對。若發現有作弊(競賽進行中或競賽後)，由工作人員提報作弊選手所屬學校處置。作弊選手的競賽成績除將作廢外，且將提報ACM
+                        ICPC相關單位列入紀錄。 </p>
+
+                    <p class="text1">(八). 選手不得有利用競賽評分系統之漏洞，存取與競賽無關之網路資源達成影響競賽公平性之行為，違規者將立即停止其競賽資格，並提報所屬學校及相關單位處理。</p>
+
+                    <h3 class="strong">程式設計規範</h3>
+                    <p class="text1">(一). <span
+                            class="strong">考試的程式設計，所有輸入與輸出均採取「標準輸入」(stdin)與標準輸出」(stdout)，不可使用檔案讀寫。</span></p>
+
+                    撰寫程式時，於 C 語言，可使用如 scanf 與 printf 函式；於 C++，可使用如 cin 與cout 物件。 </ul>
+                    <p class="text1">(二). 輸入與輸出資料全為純文字資料，必須完全依照題目的輸入與輸出格式撰寫程式。程式必須通過評判系統的「隱藏測試資料」(不公開)，才算「答對」。</p>
+
+                    <p class="text1">(三). 所撰寫的程式必須「選擇正確的語言」送繳程式。 </p>
+                </strong>
+
+                <h3 class="strong">評判伺服器訊息</h3>
+
+                <ul>
+                    <strong>
+                        <li>Yes <ul>
+                                <li>答對</li>
+                            </ul>
+                        </li>
+                        <li>No - Compilation Error <ul>
+                                <li>無法成功編譯</li>
+                            </ul>
+                        </li>
+                        <li>No - Run-time Error <ul>
+                                <li>無法正常執行完畢</li>
+                            </ul>
+                        </li>
+                        <li>No - Time-limit Exceeded<ul>
+                                <li>在時間限制內無法執行完畢</li>
+                            </ul>
+                        </li>
+                        <li>No - Wrong Answer<ul>
+                                <li>答案是錯的，格式不符合要求也算錯。</li>
+                            </ul>
+                        </li>
+                        <li>No - Broken Pipe<ul>
+                                <li>如果程式無法在執行結束之前，成功讀入所有測試資料，有可能因為PC<sup>2</sup>設計上的瑕疵，將會產生 Broken Pipe 的例外訊息，
+                                    無法判別是 Time-limit Exceeded 或是 Run-time Error。</li>
+                                <li>If your program cannot complete reading all input before it is terminated, then you
+                                    should get this response. This is a bug of PC<sup>2</sup> 9.2.4.
+                                    We cannot distinguish which kind of errors of your program in a short time, but it
+                                    should be a Run-time Error or a Time-limit Exceeded in general.</li>
+                            </ul>
+                        </li>
+                    </strong>
+                </ul>
+
+                <strong>
+                    <h3 class="strong">計分方式與排名</h3>
+                    <p class="text1">(一). 採用 ACM ICPC
+                        評分方式，送繳程式之結果，只有「對」與「錯」。答對題數較多者，排名較前。答對題數相同者，以解題時間總和決定排名。解題時間總和，係指考試開始至解題正確所經過的時間，再加上罰扣時間(每送出題解錯誤一次罰加20
+                        分鐘)。
+                        <span class="strong">答錯的題目不計時間及罰扣時間。</span> </p>
+
+                    <p class="text1">(二). 送繳程式後，評判系統若已有「送繳」(NEW)紀錄，而尚未批改，請勿再重複送繳，以免遭罰扣時間。</p>
+                </strong>
+            </div>
+
+        </div>
+
+
+        <script src="js/ui.js"></script>
+        <div align="center">
             <hr>
-                <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號    電話 ：(04) 2359-0121  ext. 33806     信箱 ：ncpu2018@thu.edu.tw
+            <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號 電話 ：(04) 2359-0121 ext. 33806 信箱 ：ncpu2018@thu.edu.tw
             </span>
             <hr>
         </div>
-    </body>
-    </html>
+</body>
+
+</html>

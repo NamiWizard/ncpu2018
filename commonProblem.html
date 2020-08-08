@@ -1,42 +1,52 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A layout example with a side menu that hides on mobile, just like the Pure website.">
+    <meta name="description"
+        content="A layout example with a side menu that hides on mobile, just like the Pure website.">
     <title>NCPU2018常見問題</title>
-    
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" integrity="sha384-"
+        crossorigin="anonymous">
     <!--[if lte IE 8]>
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-old-ie-min.css">
     <![endif]-->
     <!--[if gt IE 8]><!-->
     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
     <!--<![endif]-->
-    
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
-        <!--[if lte IE 8]>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!--[if lte IE 8]>
             <link rel="stylesheet" href="css/layouts/side-menu-old-ie.css">
         <![endif]-->
-        <!--[if gt IE 8]><!-->
-            <link rel="stylesheet" href="css/layouts/side-menu.css">
-        <!--<![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="css/layouts/side-menu.css">
+    <!--<![endif]-->
     <style type="text/css">
-
-        img{
+        img {
             width: 100%;
         }
-        #Head{
-            border-top:5px rgb(67, 207, 200) solid;
-            border-bottom:5px rgb(67, 207, 200) solid;
-            padding:1.25%;
+
+        #Head {
+            border-top: 5px rgb(67, 207, 200) solid;
+            border-bottom: 5px rgb(67, 207, 200) solid;
+            padding: 1.25%;
             padding-left: 0%;
             margin-top: 30px;
-            margin-bottom:30px;
+            margin-bottom: 30px;
             margin-left: 5%;
             margin-right: 5%;
             font-weight: bold;
@@ -44,212 +54,253 @@
             text-align: left;
             box-sizing: border-box;
         }
-        #border{
+
+        #border {
             color: rgb(67, 207, 200);
-            padding:30px;
+            padding: 30px;
             padding-left: 5%;
             font-weight: bold;
             font-size: 150%;
             box-sizing: border-box;
         }
-        #list{
+
+        #list {
             margin-top: 20px;
             margin-bottom: 20px;
-            list-style-position:inside;
+            list-style-position: inside;
             box-sizing: border-box;
             margin-left: 5%;
             margin-right: 5%;
             font-weight: bold;
-        }  
-        li{
+        }
+
+        li {
             margin-bottom: 20px;
         }
-        @media screen and (max-width: 450px){
-            #Head{font-size: 250%;}
-            #border{font-size: 115%; padding:25px}
-        }
-        @media screen and (max-width: 400px) {
-            #list{
-                margin-left: 2%;
-                list-style-position:outside;
+
+        @media screen and (max-width: 450px) {
+            #Head {
+                font-size: 250%;
             }
 
-        .carousel-item > img {
-            height: 450px;
-            object-fit:cover;
+            #border {
+                font-size: 115%;
+                padding: 25px
+            }
         }
+
+        @media screen and (max-width: 400px) {
+            #list {
+                margin-left: 2%;
+                list-style-position: outside;
+            }
+
+            .carousel-item>img {
+                height: 450px;
+                object-fit: cover;
+            }
         }
-        #carouselExampleControls{
-        position:absolute;
-        top:0px;
-        left:0px;
-        z-index:-1;
-        margin-left:150px; 
+
+        #carouselExampleControls {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            z-index: -1;
+            margin-left: 150px;
         }
+
         @media (max-width: 48em) {
-        #carouselExampleControls{
-        margin-left:0px; 
+            #carouselExampleControls {
+                margin-left: 0px;
+            }
         }
-}
 
 
-@media (max-width: 48em) {
-    .md-hide {
-     display: none; 
-    }
-}
+        @media (max-width: 48em) {
+            .md-hide {
+                display: none;
+            }
+        }
 
 
-.carousel-item > img {
-    height: 450px;
-    object-fit:cover;
-}
-
-
-    </style> 
+        .carousel-item>img {
+            height: 450px;
+            object-fit: cover;
+        }
+    </style>
 </head>
+
 <body>
-        <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" >
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <img class="d-block"  src="./img/school1.jpg" alt="First slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block " src="./img/school2.jpg" alt="Second slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block " src="./img/school3.jpg" alt="Third slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
-                  </div>
-                  <div class="carousel-item">
-                    <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
-                  </div>
-                    <div class="carousel-item">
-                    <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
-                  </div>
-              
-                </div>
+    <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block" src="./img/school1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school4.jpg" alt="fourth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school5.jpg" alt="fifth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block " src="./img/school6.jpg" alt="sixth slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school7.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school8.jpg" alt="seventh slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block" src="./img/school9.jpg" alt="seventh slide">
+            </div>
 
-              </div>
-
-
-
-
-
-<div id="layout">
-    <!-- Menu toggle -->
-    <a href="#menu" id="menuLink" class="menu-link">
-        <!-- Hamburger icon -->
-        <span></span>
-    </a>
-
-    <div id="menu">
-        <div class="pure-menu">
-            <a class="pure-menu-heading" href="#">NCPU2018</a>
-
-            <ul class="pure-menu-list">
-                <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">最新消息</a></li>
-                <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
-                <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
-                <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
-                <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
-                <li class="pure-menu-item"><a href="./PlayerNotes.html" class="pure-menu-link">選手須知</a></li>
-                <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
-                <br>
-                <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
-                <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="./commonProblem.html" class="pure-menu-link">常見問題</a></li>
-                <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
-                <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
-                <br>
-                <li style="line-height: 10px;">主辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link" > 東海大學<br>資訊工程學系</a></li>
-                <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/" class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
-                <br>
-                <li style="line-height: 10px;">協辦單位 :</li>
-                <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link" > ACM ICPC <br>Contest Council<br> for Taiwan</a></li>
-                <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php" class="pure-menu-link">東海大學<br>工學院</a></li>
-                <li class="pure-menu-item"><a href="http://www.csroc.org.tw/" class="pure-menu-link" >中華民國<br>電腦學會</a></li>
-                <li class="pure-menu-item"><a href="http://www.csroc.org.tw/" class="pure-menu-link" >台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
-                
-            </ul>
         </div>
-    </div>
-<div class="pure-g" style="height: 450px;line-height: 450px">
-    <div class="pure-u-3-24 pure-u-md-2-24">
-        &nbsp;
-    </div>
-    <div class="pure-u-8-24 pure-u-md-3-24">
-        <img src="./img/unnamed.png" >
-    </div>
-    <div class="pure-u-2-24 pure-u-md-3-24">
-        &nbsp;
-    </div>
-    <div class="pure-u-8-24 pure-u-md-3-24">
-        <img src="./img/tunghai_logo.png">
-    </div>
-    <div class="pure-u-md-13-24">
-            <h1 style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6  ">NCPU2018</h1>
-    </div>
-</div>
-        
 
-
-    <div id ="Head">常見問題</div>
-    <div id ="border">1. NCPU2018參賽隊伍計有幾隊?</div>
-    <ul id = "list"><li>最多70隊</li></ul>
-    <div id ="border">2. 請問參賽隊伍錄取準則為何?</div>
-    <ul id = "list">
-        <li>希望有意願參賽的學校至少能有一隊參賽，若仍超出競賽場地容量將以報名次序決定參賽隊伍</li>
-        <li>力求各校參賽隊伍數量平均</li>
-        <li>力求每位教練至少一隊參賽</li>
-        <li>在沒有參賽隊伍擠爆場地的壓力下，力求報名隊伍均能參賽</li>
-    </ul>
-    <div id ="border">3. 應屆畢業生是否可參賽?</div>
-    <ul id = "list"><li>可以，但錄取優先權較低，亦即報名隊伍數不足時將允許參賽</li></ul>
-    <div id ="border">4. 是否可混校組隊參賽?</div>
-    <ul id = "list"><li>可以，但錄取優先權較低，亦即報名隊伍數不足時將允許參賽</li></ul>
-    <div id ="border">5. 收到Accept回函是否表示錄取?</div>
-    <ul id = "list">
-        <li>收到Accept回函表示你的報名資料我們已收到，並會要求參賽教練與隊員，將未填完整的資料儘快補齊</li>
-        <li>收到Accept回函並且資料填寫完整的隊伍，將在滿足前述錄取準則的情況下，依報名時間優先錄取</li>
-    </ul>
-    <div id ="border">6. 何時可知報名隊伍正式錄取?</div>
-    <ul id = "list"><li>NCPU2018辦公室將在報名截止前後經檢討參賽隊伍數量後儘快通知</li></ul>
-    <div id ="border">7. 報名隊伍是否有後備隊員?</div>
-    <ul id = "list"><li>沒有</li></ul>
-    <div id ="border">8. 比賽當日若有隊伍未參賽是否有後備隊伍??</div>
-    <ul id = "list">
-        <li>後備隊伍原則上由本校報名卻未被錄取的隊伍作為候補，他校除非特別有來信表示願作為後備參賽隊伍</li>
-        <li>所有後備隊伍亦將排定後備參賽優先權</li>
-    </ul>
-    <div id ="border">9. 競賽當日報到時間結束後，有隊員未到可否以不足人數參賽?</div>
-    <ul id = "list"><li>不可</li></ul>
-    <div id ="border">10. 我有其他問題想樣了解，應如何發問?</div>
-    <ul id = "list"><li>寄信到網頁聯絡信箱</li></ul>
-</div>
+    </div>
 
 
 
 
-<script src="js/ui.js"></script>
-<div align="center">
+
+    <div id="layout">
+        <!-- Menu toggle -->
+        <a href="#menu" id="menuLink" class="menu-link">
+            <!-- Hamburger icon -->
+            <svg fill="#CCCCCC" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" width="40" height="40">
+
+                <path fill-rule="evenodd"
+                    d="M6.22 3.22a.75.75 0 011.06 0l4.25 4.25a.75.75 0 010 1.06l-4.25 4.25a.75.75 0 01-1.06-1.06L9.94 8 6.22 4.28a.75.75 0 010-1.06z">
+                </path>
+            </svg>
+        </a>
+
+        <div id="menu">
+            <div class="pure-menu">
+                <a class="pure-menu-heading" href="#">NCPU2018</a>
+
+                <ul class="pure-menu-list">
+                    <li class="pure-menu-item"><a href="./index.html" class="pure-menu-link">最新消息</a></li>
+                    <li class="pure-menu-item"><a href="./SignUp.html" class="pure-menu-link">註冊報名</a></li>
+                    <li class="pure-menu-item"><a href="./latinGrammyWinners.html" class="pure-menu-link">得獎名單</a></li>
+                    <li class="pure-menu-item"><a href="./importantSchedule.html" class="pure-menu-link">重要時程</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./regulation.html" class="pure-menu-link">競賽辦法</a></li>
+                    <li class="pure-menu-item"><a href="./environment.html" class="pure-menu-link">競賽環境</a></li>
+                    <li class="pure-menu-item"><a href="./PlayerNotes.html" class="pure-menu-link">選手須知</a></li>
+                    <li class="pure-menu-item"><a href="./link.html" class="pure-menu-link">友站連結</a></li>
+                    <br>
+                    <li class="pure-menu-item"><a href="./trafficInformation.html" class="pure-menu-link">交通資訊</a></li>
+                    <li class="pure-menu-item menu-item-divided pure-menu-selected"><a href="./commonProblem.html"
+                            class="pure-menu-link">常見問題</a></li>
+                    <li class="pure-menu-item"><a href="./thuperipheral.html" class="pure-menu-link">東海周邊</a></li>
+                    <li class="pure-menu-item"><a href="./iSidelights.html" class="pure-menu-link">活動花絮</a></li>
+                    <br>
+                    <li style="line-height: 10px;">主辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://www.cs.thu.edu.tw/" class="pure-menu-link">
+                            東海大學<br>資訊工程學系</a></li>
+                    <li class="pure-menu-item"><a href="http://itservice.thu.edu.tw/"
+                            class="pure-menu-link">東海大學<br>電子計算機中心</a></li>
+                    <br>
+                    <li style="line-height: 10px;">協辦單位 :</li>
+                    <li class="pure-menu-item"><a href="http://acm-icpc.tw/" class="pure-menu-link"> ACM ICPC
+                            <br>Contest Council<br> for Taiwan</a></li>
+                    <li class="pure-menu-item"><a href="http://enger.thu.edu.tw/main.php"
+                            class="pure-menu-link">東海大學<br>工學院</a></li>
+                    <li class="pure-menu-item"><a href="http://www.csroc.org.tw/"
+                            class="pure-menu-link">中華民國<br>電腦學會</a></li>
+                    <li class="pure-menu-item"><a href="http://www.csroc.org.tw/"
+                            class="pure-menu-link">台灣臺中<br>軟體園區發展<br>產學訓聯盟</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="pure-g" style="height: 450px;line-height: 450px">
+            <div class="pure-u-3-24 pure-u-md-2-24">
+                &nbsp;
+            </div>
+            <div class="pure-u-8-24 pure-u-md-3-24">
+                <img src="./img/unnamed.png">
+            </div>
+            <div class="pure-u-2-24 pure-u-md-3-24">
+                &nbsp;
+            </div>
+            <div class="pure-u-8-24 pure-u-md-3-24">
+                <img src="./img/tunghai_logo.png">
+            </div>
+            <div class="pure-u-md-13-24">
+                <h1
+                    style="text-align:center;line-height: 450px;color:white; font-size:60px;letter-spacing:10px;opacity: 0.6  ">
+                    NCPU2018</h1>
+            </div>
+        </div>
+
+
+
+        <div id="Head">常見問題</div>
+        <div id="border">1. NCPU2018參賽隊伍計有幾隊?</div>
+        <ul id="list">
+            <li>最多70隊</li>
+        </ul>
+        <div id="border">2. 請問參賽隊伍錄取準則為何?</div>
+        <ul id="list">
+            <li>希望有意願參賽的學校至少能有一隊參賽，若仍超出競賽場地容量將以報名次序決定參賽隊伍</li>
+            <li>力求各校參賽隊伍數量平均</li>
+            <li>力求每位教練至少一隊參賽</li>
+            <li>在沒有參賽隊伍擠爆場地的壓力下，力求報名隊伍均能參賽</li>
+        </ul>
+        <div id="border">3. 應屆畢業生是否可參賽?</div>
+        <ul id="list">
+            <li>可以，但錄取優先權較低，亦即報名隊伍數不足時將允許參賽</li>
+        </ul>
+        <div id="border">4. 是否可混校組隊參賽?</div>
+        <ul id="list">
+            <li>可以，但錄取優先權較低，亦即報名隊伍數不足時將允許參賽</li>
+        </ul>
+        <div id="border">5. 收到Accept回函是否表示錄取?</div>
+        <ul id="list">
+            <li>收到Accept回函表示你的報名資料我們已收到，並會要求參賽教練與隊員，將未填完整的資料儘快補齊</li>
+            <li>收到Accept回函並且資料填寫完整的隊伍，將在滿足前述錄取準則的情況下，依報名時間優先錄取</li>
+        </ul>
+        <div id="border">6. 何時可知報名隊伍正式錄取?</div>
+        <ul id="list">
+            <li>NCPU2018辦公室將在報名截止前後經檢討參賽隊伍數量後儘快通知</li>
+        </ul>
+        <div id="border">7. 報名隊伍是否有後備隊員?</div>
+        <ul id="list">
+            <li>沒有</li>
+        </ul>
+        <div id="border">8. 比賽當日若有隊伍未參賽是否有後備隊伍??</div>
+        <ul id="list">
+            <li>後備隊伍原則上由本校報名卻未被錄取的隊伍作為候補，他校除非特別有來信表示願作為後備參賽隊伍</li>
+            <li>所有後備隊伍亦將排定後備參賽優先權</li>
+        </ul>
+        <div id="border">9. 競賽當日報到時間結束後，有隊員未到可否以不足人數參賽?</div>
+        <ul id="list">
+            <li>不可</li>
+        </ul>
+        <div id="border">10. 我有其他問題想樣了解，應如何發問?</div>
+        <ul id="list">
+            <li>寄信到網頁聯絡信箱</li>
+        </ul>
+    </div>
+
+
+
+
+    <script src="js/ui.js"></script>
+    <div align="center">
         <hr />
-            <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號    電話 ：(04) 2359-0121  ext. 33806     信箱 ：ncpu2018@thu.edu.tw
+        <span>東海大學資工系。地址：407台中市西屯區台灣大道四段1727號 電話 ：(04) 2359-0121 ext. 33806 信箱 ：ncpu2018@thu.edu.tw
         </span>
         <hr />
     </div>
 </body>
+
 </html>
